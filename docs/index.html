@@ -12,7 +12,7 @@
 <body>
   <div class="site">
     <header class="top">
-      <a class="wordmark" href="./">File Occupied Release</a>
+      <a class="wordmark" href="./"><img src="images/logo.png" width="34" height="34" alt="">File Occupied Release</a>
       <div class="header-actions">
         <button class="language" type="button" hidden lang="en">English</button>
         <a href="https://github.com/FinnWang-CN/FileOccupiedRelease">GitHub <span aria-hidden="true">↗</span></a>
@@ -22,20 +22,18 @@
       <section class="hero" aria-labelledby="title">
         <div>
           <p class="platform">Windows 10 / 11 · x64</p>
-          <h1 id="title" data-en="Find what’s locking your file.">文件被占用？<br>先找到是哪个进程。</h1>
+          <h1 id="title" data-en="Find what’s locking your file.">文件被占用？<br>先找占用进程。</h1>
           <p class="intro" data-en="Scan files or folders, see which processes are using them, and close the process you choose.">扫描文件或文件夹，找到占用它们的进程，再选择要关闭的程序。</p>
-          <a class="download" href="https://github.com/FinnWang-CN/FileOccupiedRelease/releases/download/v1.0.0/FileOccupiedRelease.exe">
+          <a class="download" href="https://github.com/FinnWang-CN/FileOccupiedRelease/releases/latest/download/FileOccupiedRelease.exe">
             <span aria-hidden="true">↓</span><span data-en="Download for Windows">下载 Windows 版</span>
           </a>
           <p class="release"><a href="https://github.com/FinnWang-CN/FileOccupiedRelease/releases/tag/v1.0.0">v1.0.0</a> <span data-en="· 72 MB · Standalone EXE">· 72 MB · 单文件 EXE</span></p>
         </div>
-        <figure class="example">
-          <figcaption data-en="Example scan">扫描示例</figcaption>
-          <div class="target">D:\Work\report.xlsx</div>
-          <table>
-            <thead><tr><th scope="col" data-en="Process">进程</th><th scope="col">PID</th><th scope="col" data-en="Status">状态</th></tr></thead>
-            <tbody><tr><td>EXCEL.EXE</td><td>14208</td><td><span class="in-use" data-en="In use">占用中</span></td></tr></tbody>
-          </table>
+        <figure class="preview">
+          <a href="images/app.zh-CN.png">
+            <img src="images/app.zh-CN.png" width="811" height="569" alt="文件占用释放中文版，显示检测到的一个占用进程">
+          </a>
+          <figcaption data-en="File Occupied Release on Windows · Open full-size screenshot">Windows 软件实拍 · 点击查看原图</figcaption>
         </figure>
       </section>
       <section class="guide" aria-labelledby="guide-title">
@@ -47,7 +45,7 @@
         </ol>
       </section>
     </main>
-    <footer class="bottom"><a href="https://onepeak.cn/">OnePeak</a><a href="https://github.com/FinnWang-CN/FileOccupiedRelease#readme" data-en="Documentation ↗">使用与构建说明 ↗</a></footer>
+    <footer class="bottom"><a href="https://onepeak.cn/">OnePeak</a><a id="documentation" href="https://github.com/FinnWang-CN/FileOccupiedRelease/blob/main/README.zh-CN.md" data-en="Documentation ↗">使用与构建说明 ↗</a></footer>
   </div>
 </body>
 </html>
