@@ -6,10 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Product>File Occupied Release</Product>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <ApplicationIcon>Assets/FileOccupiedRelease.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets/FileOccupiedRelease.ico" LogicalName="FileOccupiedRelease.AppIcon" />
+    <EmbeddedResource Include="Assets/AuthorQr.png" LogicalName="FileOccupiedRelease.AuthorQr" />
   </ItemGroup>
 </Project>

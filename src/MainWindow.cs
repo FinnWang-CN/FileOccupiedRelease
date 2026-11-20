@@ -26,6 +26,7 @@ internal sealed class MainWindow : Form
     private readonly Button close = MakeButton();
     private readonly Button force = MakeButton();
     private readonly Button language = MakeButton();
+    private readonly Button support = MakeButton();
     private readonly Label status = new() { Dock = DockStyle.Fill, ForeColor = Muted, TextAlign = ContentAlignment.MiddleLeft };
     private readonly ListView results = new()
     {
@@ -63,9 +64,10 @@ internal sealed class MainWindow : Form
         layout.RowStyles.Add(new RowStyle(SizeType.AutoSize));
         Controls.Add(layout);
 
-        var header = MakeRow(2);
+        var header = MakeRow(3);
         header.Controls.Add(title, 0, 0);
-        header.Controls.Add(language, 1, 0);
+        header.Controls.Add(support, 1, 0);
+        header.Controls.Add(language, 2, 0);
         layout.Controls.Add(header, 0, 0);
         var input = new TableLayoutPanel
         {
@@ -134,6 +136,7 @@ internal sealed class MainWindow : Form
         force.ForeColor = Color.FromArgb(151, 43, 38);
 
         language.Click += (_, _) => { chinese = !chinese; ApplyLanguage(); };
+        support.Click += (_, _) => AuthorSupportDialog.Show(this, Texts);
         var menu = new ContextMenuStrip();
         var chooseFiles = menu.Items.Add("");
         var chooseFolder = menu.Items.Add("");
@@ -185,6 +188,7 @@ internal sealed class MainWindow : Form
     {
         Text = title.Text = Texts.Title;
         language.Text = chinese ? "English" : "简体中文";
+        support.Text = Texts.SupportAuthor;
         pathLabel.Text = path.AccessibleName = Texts.Path;
         path.PlaceholderText = Texts.Ready;
         browse.Text = Texts.Browse;

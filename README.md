@@ -18,7 +18,7 @@ Find which Windows processes are using your files and close the selected applica
 2. Click **Scan for locks**. For folders, the app checks the files they contain. Select **Recursive** to include files in subfolders.
 3. Select a process and use **Close normally** to request that its application exit. **Force end** requires confirmation and may discard unsaved work.
 
-Use the language button in the top-right corner to switch between English and Simplified Chinese.
+Use the language button in the top-right corner to switch between English and Simplified Chinese. **Support the author** opens the optional WeChat appreciation code.
 
 ## How it works
 

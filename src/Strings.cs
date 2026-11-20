@@ -8,7 +8,8 @@ internal sealed record Strings(
     string MissingPath, string AccessDenied, string WindowsError, string Error,
     string Browse, string Recursive, string Drop, string DropHint, string Kind, string State,
     string App, string Console, string Service, string System, string Unknown, string InUse,
-    string Clear, string Selection, string NoLongerUsingPath)
+    string Clear, string Selection, string NoLongerUsingPath,
+    string SupportAuthor, string SupportThanks, string SupportQr, string SupportInstructions, string Dismiss)
 {
     public static Strings Chinese { get; } = new(
         "文件占用释放", "路径", "选择文件…", "选择文件夹…", "检测占用", "取消扫描",
@@ -22,7 +23,9 @@ internal sealed record Strings(
         "操作失败。请检查目标路径或进程状态。",
         "浏览…", "递归查询", "拖放文件或文件夹", "可一次拖入多个项目。递归查询会检查子文件夹中的文件。",
         "类型", "状态", "应用", "控制台", "服务", "系统", "未知", "占用中",
-        "清空", "已选 {0} 个进程", "选中的进程已不再占用目标。");
+        "清空", "已选 {0} 个进程", "选中的进程已不再占用目标。",
+        "赞赏作者", "感谢你支持「文件占用释放」的持续开发。", "Finn Wang 的微信赞赏码",
+        "可用微信扫一扫，或截图后在「扫一扫」中从相册识别。赞赏完全自愿。", "关闭");
 
     public static Strings English { get; } = new(
         "File Occupied Release", "Path", "Choose file…", "Choose folder…", "Scan for locks", "Cancel scan",
@@ -36,5 +39,7 @@ internal sealed record Strings(
         "The operation failed. Check the path or process state.",
         "Browse…", "Recursive", "Drop files or folders", "Drop multiple items. Recursive scanning checks files in subfolders.",
         "Type", "Status", "App", "Console", "Service", "System", "Unknown", "In use",
-        "Clear", "{0} selected", "The selected process is no longer using the target.");
+        "Clear", "{0} selected", "The selected process is no longer using the target.",
+        "Support the author", "Thank you for supporting File Occupied Release.", "Finn Wang’s WeChat appreciation code",
+        "Scan with WeChat or open a screenshot in WeChat’s scanner. Support is optional.", "Close");
 }
