@@ -41,6 +41,11 @@ internal sealed class MainWindow : Form
 
     public MainWindow(string? initialPath)
     {
+        using var iconStream = typeof(MainWindow).Assembly.GetManifestResourceStream("FileOccupiedRelease.AppIcon")!;
+        var appIcon = new Icon(iconStream);
+        Icon = appIcon;
+        Disposed += (_, _) => appIcon.Dispose();
+
         AutoScaleMode = AutoScaleMode.Dpi;
         StartPosition = FormStartPosition.CenterScreen;
         Font = new Font("Segoe UI", 10);
