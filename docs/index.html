@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Windows 文件占用释放工具。查找占用文件的进程，并关闭选中的程序。">
+  <title>文件占用释放 · File Occupied Release</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="language.js" defer></script>
+</head>
+<body>
+  <div class="site">
+    <header class="top">
+      <a class="wordmark" href="./">File Occupied Release</a>
+      <div class="header-actions">
+        <button class="language" type="button" hidden lang="en">English</button>
+        <a href="https://github.com/FinnWang-CN/FileOccupiedRelease">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="title">
+        <div>
+          <p class="platform">Windows 10 / 11 · x64</p>
+          <h1 id="title" data-en="Find what’s locking your file.">文件被占用？<br>先找到是哪个进程。</h1>
+          <p class="intro" data-en="Scan files or folders, see which processes are using them, and close the process you choose.">扫描文件或文件夹，找到占用它们的进程，再选择要关闭的程序。</p>
+          <a class="download" href="https://github.com/FinnWang-CN/FileOccupiedRelease/releases/download/v1.0.0/FileOccupiedRelease.exe">
+            <span aria-hidden="true">↓</span><span data-en="Download for Windows">下载 Windows 版</span>
+          </a>
+          <p class="release"><a href="https://github.com/FinnWang-CN/FileOccupiedRelease/releases/tag/v1.0.0">v1.0.0</a> <span data-en="· 72 MB · Standalone EXE">· 72 MB · 单文件 EXE</span></p>
+        </div>
+        <figure class="example">
+          <figcaption data-en="Example scan">扫描示例</figcaption>
+          <div class="target">D:\Work\report.xlsx</div>
+          <table>
+            <thead><tr><th scope="col" data-en="Process">进程</th><th scope="col">PID</th><th scope="col" data-en="Status">状态</th></tr></thead>
+            <tbody><tr><td>EXCEL.EXE</td><td>14208</td><td><span class="in-use" data-en="In use">占用中</span></td></tr></tbody>
+          </table>
+        </figure>
+      </section>
+      <section class="guide" aria-labelledby="guide-title">
+        <h2 id="guide-title" data-en="From scan to release">使用方法</h2>
+        <ol>
+          <li><strong data-en="Choose a path">选择路径</strong><p data-en="Drop in files and folders. Enable Recursive to scan files in subfolders.">拖入文件或文件夹。勾选「递归查询」即可扫描子文件夹中的文件。</p></li>
+          <li><strong data-en="Scan for locks">检测占用</strong><p data-en="Find the process name and PID for each lock that Windows Restart Manager detects.">查看 Windows Restart Manager 检测到的占用进程及其 PID。</p></li>
+          <li><strong data-en="Close the selected app">关闭选中的程序</strong><p data-en="Try Close normally first. Force end can discard unsaved work.">可以先尝试「正常关闭」。「强制结束」可能导致未保存的数据丢失。</p></li>
+        </ol>
+      </section>
+    </main>
+    <footer class="bottom"><a href="https://onepeak.cn/">OnePeak</a><a href="https://github.com/FinnWang-CN/FileOccupiedRelease#readme" data-en="Documentation ↗">使用与构建说明 ↗</a></footer>
+  </div>
+</body>
+</html>
