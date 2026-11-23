@@ -3,18 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Windows 文件占用释放工具。查找占用文件的进程，并关闭选中的程序。">
-  <title>文件占用释放 · File Occupied Release</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
-  <script src="language.js" defer></script>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/style.css?v=2">
+  <script src="/language.js?v=2" defer></script>
+<title>文件占用释放｜查找 Windows 文件占用进程</title>
+<meta name="description" content="在 Windows 10 或 11 x64 上扫描文件或文件夹，查看占用进程及 PID，并选择要关闭的应用。">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://fileoccupiedrelease.onepeak.cn/">
+<link rel="alternate" hreflang="zh-CN" href="https://fileoccupiedrelease.onepeak.cn/">
+<link rel="alternate" hreflang="en" href="https://fileoccupiedrelease.onepeak.cn/en/">
+<link rel="alternate" hreflang="x-default" href="https://fileoccupiedrelease.onepeak.cn/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="File Occupied Release">
+<meta property="og:title" content="文件占用释放｜查找 Windows 文件占用进程">
+<meta property="og:description" content="在 Windows 10 或 11 x64 上扫描文件或文件夹，查看占用进程及 PID，并选择要关闭的应用。">
+<meta property="og:url" content="https://fileoccupiedrelease.onepeak.cn/">
+<meta property="og:image" content="https://fileoccupiedrelease.onepeak.cn/images/app.zh-CN.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://fileoccupiedrelease.onepeak.cn/#website",
+      "url": "https://fileoccupiedrelease.onepeak.cn/",
+      "name": "File Occupied Release",
+      "inLanguage": [
+        "zh-CN",
+        "en"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://fileoccupiedrelease.onepeak.cn/#page",
+      "name": "文件占用释放｜查找 Windows 文件占用进程",
+      "url": "https://fileoccupiedrelease.onepeak.cn/",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@id": "https://fileoccupiedrelease.onepeak.cn/#website"
+      },
+      "mainEntity": {
+        "@id": "https://fileoccupiedrelease.onepeak.cn/#app"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://fileoccupiedrelease.onepeak.cn/#app",
+      "name": "File Occupied Release",
+      "url": "https://fileoccupiedrelease.onepeak.cn/",
+      "description": "在 Windows 10 或 11 x64 上扫描文件或文件夹，查看占用进程及 PID，并选择要关闭的应用。",
+      "operatingSystem": "Windows 10 and Windows 11 x64",
+      "applicationCategory": "UtilitiesApplication",
+      "inLanguage": "zh-CN",
+      "image": "https://fileoccupiedrelease.onepeak.cn/images/app.zh-CN.png",
+      "featureList": [
+        "查找文件占用进程",
+        "扫描文件与文件夹",
+        "查看进程名与 PID"
+      ],
+      "downloadUrl": "https://github.com/FinnWang-CN/FileOccupiedRelease/releases",
+      "publisher": {
+        "@type": "Person",
+        "@id": "https://onepeak.cn/#finn-wang",
+        "name": "Finn Wang",
+        "url": "https://onepeak.cn/",
+        "sameAs": "https://github.com/FinnWang-CN"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <div class="site">
     <header class="top">
-      <a class="wordmark" href="./"><img src="images/logo.png" width="34" height="34" alt="">File Occupied Release</a>
+      <a class="wordmark" href="./"><img src="/images/logo.png" width="34" height="34" alt="">File Occupied Release</a>
       <div class="header-actions">
-        <button class="language" type="button" hidden lang="en">English</button>
+        <a class="language" href="/en/" hreflang="en" lang="en">English</a>
         <a href="https://github.com/FinnWang-CN/FileOccupiedRelease">GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </header>
@@ -22,30 +90,30 @@
       <section class="hero" aria-labelledby="title">
         <div>
           <p class="platform">Windows 10 / 11 · x64</p>
-          <h1 id="title" data-en="Find what’s locking your file.">文件被占用？<br>先找占用进程。</h1>
-          <p class="intro" data-en="Scan files or folders, see which processes are using them, and close the process you choose.">扫描文件或文件夹，找到占用它们的进程，再选择要关闭的程序。</p>
+          <h1 id="title">查找 Windows 文件占用进程</h1>
+          <p class="intro">扫描文件或文件夹，找到占用它们的进程，再选择要关闭的程序。</p>
           <a class="download" href="https://github.com/FinnWang-CN/FileOccupiedRelease/releases/latest/download/FileOccupiedRelease.exe">
-            <span aria-hidden="true">↓</span><span data-en="Download for Windows">下载 Windows 版</span>
+            <span aria-hidden="true">↓</span><span>下载 Windows 版</span>
           </a>
-          <p class="release"><a href="https://github.com/FinnWang-CN/FileOccupiedRelease/releases/tag/v1.0.2">v1.0.2</a> <span data-en="· 72 MB · Standalone EXE">· 72 MB · 单文件 EXE</span></p>
+          <p class="release"><a href="https://github.com/FinnWang-CN/FileOccupiedRelease/releases/tag/v1.0.2">v1.0.2</a> <span>· 72 MB · 单文件 EXE</span></p>
         </div>
         <figure class="preview">
-          <a href="images/app.zh-CN.png">
-            <img src="images/app.zh-CN.png" width="811" height="569" alt="文件占用释放中文版，显示检测到的一个占用进程">
+          <a href="/images/app.zh-CN.png">
+            <img src="/images/app.zh-CN.png" width="811" height="569" alt="文件占用释放中文版，显示检测到的一个占用进程">
           </a>
-          <figcaption data-en="File Occupied Release on Windows · Open full-size screenshot">Windows 软件实拍 · 点击查看原图</figcaption>
+          <figcaption>Windows 软件实拍 · 点击查看原图</figcaption>
         </figure>
       </section>
       <section class="guide" aria-labelledby="guide-title">
-        <h2 id="guide-title" data-en="From scan to release">使用方法</h2>
+        <h2 id="guide-title">使用方法</h2>
         <ol>
-          <li><strong data-en="Choose a path">选择路径</strong><p data-en="Drop in files and folders. Enable Recursive to scan files in subfolders.">拖入文件或文件夹。勾选「递归查询」即可扫描子文件夹中的文件。</p></li>
-          <li><strong data-en="Scan for locks">检测占用</strong><p data-en="Find the process name and PID for each lock that Windows Restart Manager detects.">查看 Windows Restart Manager 检测到的占用进程及其 PID。</p></li>
-          <li><strong data-en="Close the selected app">关闭选中的程序</strong><p data-en="Try Close normally first. Force end can discard unsaved work.">可以先尝试「正常关闭」。「强制结束」可能导致未保存的数据丢失。</p></li>
+          <li><strong>选择路径</strong><p>拖入文件或文件夹。勾选「递归查询」即可扫描子文件夹中的文件。</p></li>
+          <li><strong>检测占用</strong><p>查看 Windows Restart Manager 检测到的占用进程及其 PID。</p></li>
+          <li><strong>关闭选中的程序</strong><p>可以先尝试「正常关闭」。「强制结束」可能导致未保存的数据丢失。</p></li>
         </ol>
       </section>
     </main>
-    <footer class="bottom"><a href="https://onepeak.cn/">OnePeak</a><a id="documentation" href="https://github.com/FinnWang-CN/FileOccupiedRelease/blob/main/README.zh-CN.md" data-en="Documentation ↗">使用与构建说明 ↗</a></footer>
+    <footer class="bottom"><nav class="related-projects" aria-label="同一开发者的项目"><a href="https://onepeak.cn/">OnePeak</a><a href="https://poise.onepeak.cn/">Poise 轻衡</a><a href="https://keypresser.onepeak.cn/">KeyPresser</a></nav><a id="documentation" href="https://github.com/FinnWang-CN/FileOccupiedRelease/blob/main/README.zh-CN.md">使用与构建说明 ↗</a></footer>
   </div>
 </body>
 </html>

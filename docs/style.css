@@ -49,3 +49,5 @@ li p { color: var(--muted); font-size: .94rem; margin: 5px 0 0; }
   .top { min-height: 62px; }
   .header-actions { gap: 10px; }
 }
+
+.bottom,.related-projects{flex-wrap:wrap}.related-projects{display:flex;gap:8px 16px}

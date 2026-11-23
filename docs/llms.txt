@@ -1,0 +1,14 @@
+# 文件占用释放
+
+> File Occupied Release identifies processes using files or folders on Windows. It uses Windows Restart Manager to report lock owners, and displays process names and PIDs. You choose which application to close. Force ending a process can discard unsaved work.
+
+- [中文官网](https://fileoccupiedrelease.onepeak.cn/)
+- [Official English site](https://fileoccupiedrelease.onepeak.cn/en/)
+- [Official Windows releases](https://github.com/FinnWang-CN/FileOccupiedRelease/releases)
+- Platform: Windows 10 or Windows 11 x64. The website offers a standalone EXE.
+
+## Related projects / 相关项目
+
+- [OnePeak](https://onepeak.cn/)
+- [Poise](https://poise.onepeak.cn/)
+- [KeyPresser](https://keypresser.onepeak.cn/)
